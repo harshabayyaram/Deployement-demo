@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
 const port = 5000;
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 const db = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'demo_data'
+    host: 'sql.freedb.tech',
+    user: 'freedb_admin_demo_deployement',
+    password: '*BSreHy5%&x$b6S',
+    database: 'freedb_Demo_deployement'
 });
 
 app.get('/users', (req, res) => {
